@@ -1,6 +1,6 @@
 {
-    "Name": "Virtual Machine Operator",
-    "Id": "123-456-789",
+    "Name": "Virtual Machine Operator (Custom)",
+    "Id": "null",
     "IsCustom": "True",
     "Description": "Can start, restart, and stop virtual machines but cannot delete",
     "Actions": [
