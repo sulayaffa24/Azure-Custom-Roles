@@ -1,0 +1,22 @@
+{
+    "Name": "Virtual Machine Operator",
+    "Id": "123-456-789",
+    "IsCustom": "True",
+    "Description": "Can start, restart, and stop virtual machines but cannot delete",
+    "Actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Compute/*/read",
+        "Microsoft.Compute/virtualMachines/start/action",
+        "Microsoft.Compute/virtualMachines/restart/action",
+        "Microsoft.Compute/virtualMachines/deallocate/action",
+        "Microsoft.Network/*/read",
+        "Microsoft.Storage/*/read"
+
+    ],
+    "NotActions": [
+        "Microsoft.Compute/virtualMachines/delete"
+    ],
+    "AssignableScopes": [
+        "subscriptions/SUBSCRIPTION_ID"
+    ]
+}
